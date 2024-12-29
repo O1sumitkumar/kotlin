@@ -28,5 +28,3 @@ Before you start, make sure you have the following tools installed:
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/kotlin-android-project.git
-cd kotlin-android-project
