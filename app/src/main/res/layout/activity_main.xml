@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <!-- First Child -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center"
+        android:text="First Child"
+        android:textSize="18sp" />
+
+<!--    second child to set horizontal row-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:hapticFeedbackEnabled="true"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:text="Download" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:text="Upload" />
+</LinearLayout>
+    
+<!--    row for change app theme -->
+    <TextView
+        android:id="@+id/themeStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:text="Current App Theme is Light Mode"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hapticFeedbackEnabled="true"
+        android:orientation="horizontal">
+<Button
+    android:id="@+id/btnDarkMode"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:layout_weight="1"
+    android:text="Dark Mode" />
+
+        <Button
+            android:id="@+id/btnLightMode"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:text="Light Mode" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hapticFeedbackEnabled="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Login Screen" />
+    </LinearLayout>
+
+
+</LinearLayout>
